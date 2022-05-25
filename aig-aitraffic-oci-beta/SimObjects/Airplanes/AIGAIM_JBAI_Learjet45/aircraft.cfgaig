@@ -1,0 +1,509 @@
+[VERSION]
+major=1
+minor=0
+
+[General]
+atc_type="TT:ATCCOM.ATC_NAME LEARJET.0.text"
+atc_model="TT:ATCCOM.AC_MODEL LJ45.0.text"
+Category="airplane"
+performance=""
+editable=1
+wip_indicator=2
+icao_type_designator=LJ45
+icao_manufacturer=LEAR JET
+icao_model=45
+icao_engine_type="Jet"
+icao_engine_count=2
+icao_WTC="M"
+icao_generic=0
+
+[PILOT]
+pilot="Pilot_Female_Uniform"
+copilot="Pilot_Male_Uniform"
+instructor="Pilot_Male_Casual"
+pilot_default_animation="Idle1_PoseAirliner","","","","","","","","","","","","","","",""
+copilot_default_animation="Idle2_PoseAirliner","","","","","","","","","","","","","","",""
+pilot_attach_node="PILOT_0"
+copilot_attach_node="PILOT_1"
+
+[SERVICES]
+FUELTRUCK=1
+BAGGAGE_LOADER=1
+CATERING_TRUCK=0
+BOARDING_RAMP=0
+GROUND_POWER_UNIT=1
+PUSHBACK=0
+SMALL_PUSHBACK=1
+MARSHALLER=1
+JETWAY=0
+
+[EFFECTS]
+effect.0=contrail1#(A:GENERAL ENG COMBUSTION:1, boolean)#FX_ASOBO_HEAT_BIG
+effect.1=contrail2#(A:GENERAL ENG COMBUSTION:2, boolean)#FX_ASOBO_HEAT_BIG
+
+[LOADING]
+ImageName=LOADING_FREEFLIGHT
+
+[STALL PROTECTION]
+stall_protection=1 ; Alpha Protection
+off_limit=9 ; Alpha below which the Alpha Protection can be disabled (If also below off_yoke_limit)
+off_yoke_limit=1 ; Yoke position (in Pct) below which the Alpha Protection can be disabled (If also below off_limit)
+on_limit=12 ; Alpha above which the Alpha Protection timer starts
+on_goal=10 ; The alpha that the Alpha Protection will attempt to reach when triggered
+timer_trigger=1.0 ; Duration (in Sec) the alpha must be above on_limit before the Alpha Protection is triggered
+
+[fltsim.0]
+title=AIGAIM_Aviation Advisor Bombardier Learjet 45XR - N960AS
+model=GA2J-Aviation Advisor_N960AS
+texture=GA2J-Aviation Advisor_N960AS
+atc_airline=LAKEFRONT
+atc_parking_types=RAMP
+atc_parking_codes=GA2J,LKF
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Learjet 45XR, c/n 45-408, Aviation Advisor, N960AS
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: Marco Kosterman on JCAI Filename: AviationAdvisorLearjet45XR.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=LKF
+
+[fltsim.1]
+title=AIGAIM_Aviation Advisor Bombardier Learjet 45 - N887SG
+model=GA2J-Aviation Advisor_N887SG
+texture=GA2J-Aviation Advisor_N887SG
+atc_airline=LAKEFRONT
+atc_parking_types=RAMP
+atc_parking_codes=GA2J,LKF
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Learjet 45, c/n 45-174, Aviation Advisor, N887SG
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: Marco Kosterman on JCAI Filename: AviationAdvisorLearjet45.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=LKF
+
+[fltsim.2]
+title=AIGAIM_Cargill Bombardier Learjet 45XR - N245CM
+model=GA2J-Cargill_N245CM
+texture=GA2J-Cargill_N245CM
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Learjet 45, c/n 45-403, Cargill, N245CM
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: Marco Kosterman on JCAI Filename: CargillLearjet45XR.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.3]
+title=AIGAIM_CarMax Bombardier Learjet 45XR - N45KX
+model=GA2J-CarMax_N45KX
+texture=GA2J-CarMax_N45KX
+atc_id=N45KX
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=CarMax Bombardier Learjet 45XR N45KX
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: JCAI Filename: CarMax_LR45.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.4]
+title=AIGAIM_Chartright Air Bombardier Learjet 45XR - C-GNSC
+model=GA2J-Chartright Air_C-GNSC
+texture=GA2J-Chartright Air_C-GNSC
+atc_airline=CHARTRIGHT
+atc_parking_types=RAMP
+atc_parking_codes=GA2J,HRT
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Bombardier Learjet 45XR, c/n 45-237, Chartright Air, C-GNSC
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: Marco Kosterman on JCAI Filename: JBAI_LJ45XR_C-GNSC.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=HRT
+
+[fltsim.5]
+title=AIGAIM_Chartright Air Bombardier Learjet 45 - C-GMRO
+model=GA2J-Chartright Air_C-GMRO
+texture=GA2J-Chartright Air_C-GMRO
+atc_id=C-GMRO
+atc_airline=CHARTRIGHT
+atc_parking_types=RAMP
+atc_parking_codes=GA2J,HRT
+ui_manufacturer=Learjet
+ui_type=Learjet 45
+ui_variation=Learjet 45 JBAI Chartright Air HRT C-GMRO
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: OCH Filename: Chartright Air.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=HRT
+
+[fltsim.6]
+title=AIGAIM_Executive Aircraft Charter Services Bombardier Learjet 45 - N451BW
+model=GA2J-Executive Air Charter Services_N451BW
+texture=GA2J-Executive Air Charter Services_N451BW
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Learjet 45, c/n 45-261, Executive Aircraft Charter Service, N451BW
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: Marco Kosterman on JCAI Filename: ExecutiveAircraftCharterServicesLearjet45s.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.7]
+title=AIGAIM_Executive Aircraft Charter Services Bombardier Learjet 45 - N599TA
+model=GA2J-Executive Air Charter Services_N599TA
+texture=GA2J-Executive Air Charter Services_N599TA
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Learjet 45, c/n 45-212, Executive Aircraft Charter Service, N599TA
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: Marco Kosterman on JCAI Filename: ExecutiveAircraftCharterServicesLearjet45s.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.8]
+title=AIGAIM_GEICO Bombardier Learjet 45XR - N425G
+model=GA2J-GEICO_N425G
+texture=GA2J-GEICO_N425G
+atc_id=N425G
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=GEICO Bombardier Learjet 45XR N425G
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: JCAI Filename: GEICO_LR45_N425G.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.9]
+title=AIGAIM_Koch Industries Bombardier Learjet 45XR - N145K
+model=GA2J-Koch Industries_N145K
+texture=GA2J-Koch Industries_N145K
+atc_id=N145K
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Learjet
+ui_type=Learjet 45
+ui_variation=Learjet 45 JBAI Koch Industries KIND N145K
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: OCH Filename: KIND_LJ45_HD.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.10]
+title=AIGAIM_Koch Industries Bombardier Learjet 45XR - N245K
+model=GA2J-Koch Industries_N245K
+texture=GA2J-Koch Industries_N245K
+atc_id=N245K
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Learjet
+ui_type=Learjet 45
+ui_variation=Learjet 45 JBAI Koch Industries KIND N245K
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: OCH Filename: KIND_LJ45_HD.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.11]
+title=AIGAIM_Koch Industries Bombardier Learjet 45XR - N345K
+model=GA2J-Koch Industries_N345K
+texture=GA2J-Koch Industries_N345K
+atc_id=N345K
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Learjet
+ui_type=Learjet 45
+ui_variation=Learjet 45 JBAI Koch Industries KIND N345K
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: OCH Filename: KIND_LJ45_HD.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.12]
+title=AIGAIM_Koch Industries Bombardier Learjet 45XR - N745K
+model=GA2J-Koch Industries_N745K
+texture=GA2J-Koch Industries_N745K
+atc_id=N745K
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Learjet
+ui_type=Learjet 45
+ui_variation=Learjet 45 JBAI Koch Industries KIND N745K
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: OCH Filename: KIND_LJ45_HD.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.13]
+title=AIGAIM_Koch Industries Bombardier Learjet 45XR - N945K
+model=GA2J-Koch Industries_N945K
+texture=GA2J-Koch Industries_N945K
+atc_id=N945K
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Learjet
+ui_type=Learjet 45
+ui_variation=Learjet 45 JBAI Koch Industries KIND N945K
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: OCH Filename: KIND_LJ45_HD.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.14]
+title=AIGAIM_Mayo Aviation Bombardier Learjet 45 - N419LG
+model=GA2J-Mayo Aviation_N419LG
+texture=GA2J-Mayo Aviation_N419LG
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Learjet 45, c/n 45-079, Mayo Aviation, N419LG
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: Marco Kosterman on JCAI Filename: MayoAviationLearjet45.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.15]
+title=AIGAIM_McCain Foods Bombardier Learjet 45 - C-FRYS
+model=GA2J-McCain Foods_C-FRYS
+texture=GA2J-McCain Foods_C-FRYS
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Learjet 45, c/n 45-275, McCain Foods, C-FRYS
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: Marco Kosterman on JCAI Filename: McCainFoodsLearjet45.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.16]
+title=AIGAIM_Metro Aviation Bombardier Learjet 45XR - N429SA
+model=GA2J-Metro Aviation_N429SA
+texture=GA2J-Metro Aviation_N429SA
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Bombardier
+ui_type=Learjet 45
+ui_variation=Superior Ambulance Aviation Inc., S/N 45-392
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: KAIW2 Filename: JBAI_Metro-Aviation_Lear-45XR_N429SA_jondix.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.17]
+title=AIGAIM_NASCAR Private Jets Bombardier Learjet 45 - N229BK Brad Keselowski
+model=GA2J-NASCAR Private Jets_N229BK Brad Keselowski
+texture=GA2J-NASCAR Private Jets_N229BK Brad Keselowski
+atc_id=N229BK
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Bombardier
+ui_type=Learjet 45
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: KAIW2 Filename: JBAI_Brad-Keselowski_LJ45_N229BK_jondix.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.18]
+title=AIGAIM_Owens Corning Bombardier Learjet 45XR - N2426
+model=GA2J-Owens Corning_N2426
+texture=GA2J-Owens Corning_N2426
+atc_id=N2426
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Owens Corning Bombardier Learjet 45XR N2426
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: JCAI Filename: OwensCorning_LJ45.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.19]
+title=AIGAIM_OzAir Bombardier Learjet 45 - N197EC
+model=GA2J-Oz Air_N197EC
+texture=GA2J-Oz Air_N197EC
+atc_id=N197EC
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Bombardier
+ui_type=Learjet 45
+ui_variation=OzAir Bombardier Learjet 45 N197EC
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: KAIW2 Filename: JBAI_OzAir_LJ45XR-N197EC_jondix.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.20]
+title=AIGAIM_Pella Corporation Bombardier Learjet 45XR - N1925P
+model=GA2J-Pella Corporation_N1925P
+texture=GA2J-Pella Corporation_N1925P
+atc_id=N1925P
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Pella Corporation Bombardier Learjet 45XR N1925P
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: JCAI Filename: PellaCorp_LJ45_Fleet.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.21]
+title=AIGAIM_Pella Corporation Bombardier Learjet 45 - N12VU
+model=GA2J-Pella Corporation_N12VU
+texture=GA2J-Pella Corporation_N12VU
+atc_id=N12VU
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Pella Corporation Bombardier Learjet 45 N12VU
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: JCAI Filename: PellaCorp_LJ45_Fleet.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.22]
+title=AIGAIM_Pilot Corporation Bombardier Learjet 45XR - N681P
+model=GA2J-Pilot Corporation_N681P
+texture=GA2J-Pilot Corporation_N681P
+atc_id=N681P
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Pilot Corporation Bombardier Learjet 45XR N681P
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: JCAI Filename: PilotCorp_LR45_Fleet.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.23]
+title=AIGAIM_Pilot Corporation Bombardier Learjet 45XR - N81FJ
+model=GA2J-Pilot Corporation_N81FJ
+texture=GA2J-Pilot Corporation_N81FJ
+atc_id=N81FJ
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=JBAI
+ui_type=Learjet 45
+ui_variation=Pilot Corporation Bombardier Learjet 45XR N81FJ
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: JCAI Filename: PilotCorp_LR45_Fleet.zip
+description=JBAI_Learjet45-Marco(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.24]
+title=AIGAIM_Ryanair Operations Bombardier Learjet 45 - M-ABEU
+model=GA2J-Ryanair Operations_M-ABEU
+texture=GA2J-Ryanair Operations_M-ABEU
+atc_id=M-ABEU
+atc_airline=RYANAIR
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Learjet
+ui_type=Learjet 45
+ui_variation=Learjet 45 JBAI Ryanair RYR M-ABEU
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: OCH Filename: RYR_LJ45_HD.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.25]
+title=AIGAIM_Ryanair Operations Bombardier Learjet 45 - M-ABGV
+model=GA2J-Ryanair Operations_M-ABGV
+texture=GA2J-Ryanair Operations_M-ABGV
+atc_id=M-ABGV
+atc_airline=RYANAIR
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Learjet
+ui_type=Learjet 45
+ui_variation=Learjet 45 JBAI Ryanair RYR M-ABGV
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: OCH Filename: RYR_LJ45_HD.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
+
+[fltsim.26]
+title=AIGAIM_Ryanair Operations Bombardier Learjet 45 - M-ABJA
+model=GA2J-Ryanair Operations_M-ABJA
+texture=GA2J-Ryanair Operations_M-ABJA
+atc_id=M-ABJA
+atc_airline=RYANAIR
+atc_parking_types=RAMP
+atc_parking_codes=GA2J
+ui_manufacturer=Learjet
+ui_type=Learjet 45
+ui_variation=Learjet 45 JBAI Ryanair RYR M-ABJA
+ui_typerole=Commercial Airliner
+ui_createdby=Provided by: OCH Filename: RYR_LJ45_HD.zip
+description=JBAI_Learjet45(fs20)
+isAirTraffic=1
+isUserSelectable=0
+icao_airline=GA2J
